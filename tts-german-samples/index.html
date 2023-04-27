@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Samples</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin-left: 2rem;
+      }
+      header {
+        padding-top: 0.5rem;
+        height: 5rem;
+      }
+      footer {
+        margin: 5rem;
+      }
+      p {
+        font-size: 1.2rem;
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0.8rem 0 0.5rem 0;
+      }
+      h2 {
+        margin-top: 2.5rem;
+      }
+
+      ol {
+        width: min(35rem, 90vw);
+        display: flex;
+        font-size: 1.2rem;
+        justify-content: left;
+        flex-wrap: wrap;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      ol li {
+        width: 10rem;
+      }
+      audio {
+        height: 2rem;
+        width: max(10rem, min(20rem, 90vw));
+        margin-right: 1rem;
+      }
+      .sample {
+        display: flex;
+        flex-direction: column;
+        font-family: sans-serif;
+        font-size: 1.2rem;
+        width: min(90vw, 60rem);
+        border-bottom: 2px solid #aaa;
+        padding: 0.5rem 0 0.5rem 0;
+      }
+      .sample>audio {
+        width: max(10rem, min(25rem, 90vw));
+      }
+      .audio-row {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+      }
+      .audio-row__item {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+      .audio-row__item label {
+        width: 6rem;
+      }
+      .audio-box {
+        display: flex;
+        flex-wrap: wrap;
+        width: min(60rem, 90vw);
+      }
+      .audio-box .audio-item {
+        font-size: 1.2rem;
+        display: flex;
+        align-items: center;
+      }
+      .audio-box audio {
+        width: max(10rem, min(15rem, 90vw));
+      }
+    </style>
+    <title>Audio samples</title>
+  </head>
+  <body>
+    <h1>Audio samples</h1>
+    <div class="sample">
+      <audio src="static/rnd_sample0.wav" controls></audio>
+      <p>Hallo Welt. Wie geht es dir?</p>
+    </div>
+    <div class="sample">
+      <audio src="static/rnd_sample1.wav" controls></audio>
+      <p>
+        Alle Menschen sind frei und gleich an Würde und Rechten geboren. Sie
+        sind mit Vernunft und Gewissen begabt und sollen einander im Geist der
+        Solidarität begegnen.
+      </p>
+    </div>
+    <div class="sample">
+      <audio src="static/rnd_sample2.wav" controls></audio>
+      <p>
+        Berlin ist die Hauptstadt und ein Land der Bundesrepublik Deutschland.
+        Die Großstadt ist mit rund 3,7 Millionen Einwohnern die
+        bevölkerungsreichste und mit 892 Quadratkilometern die flächengrößte
+        Gemeinde Deutschlands sowie die bevölkerungsreichste Stadt der
+        Europäischen Union.
+      </p>
+    </div>
+    <div class="sample">
+      <audio src="static/rnd_sample3.wav" controls></audio>
+      <p>Brot.</p>
+    </div>
+    <div class="sample">
+      <audio src="static/rnd_sample4.wav" controls></audio>
+      <p>
+        Fischers Fritze fischt frische Fische Frische Fische fischt Fischers
+        Fritze. (speed=1.5)
+      </p>
+    </div>
+
+    <h2>Samples from the test set</h2>
+
+    <div class="sample">
+      <div class="audio-row">
+        <div class="audio-row__item">
+          <label>generated:</label>
+          <audio src="static/test_gen0.wav" controls></audio>
+        </div>
+        <div class="audio-row__item">
+          <label>reference:</label>
+          <audio src="static/test_ref0.wav" controls></audio>
+        </div>
+      </div>
+      <p>
+        Und wieder überkommt mich dieses, nicht endende Gefühl der Zärtlichkeit.
+      </p>
+    </div>
+
+    <div class="sample">
+      <div class="audio-row">
+        <div class="audio-row__item">
+          <label>generated:</label>
+          <audio src="static/test_gen1.wav" controls></audio>
+        </div>
+        <div class="audio-row__item">
+          <label>reference:</label>
+          <audio src="static/test_ref1.wav" controls></audio>
+        </div>
+      </div>
+      <p>Offenbar lässt es sich in Quarantäne besonders ausgiebig zocken.</p>
+    </div>
+    <div class="sample">
+      <div class="audio-row">
+        <div class="audio-row__item">
+          <label>generated:</label>
+          <audio src="static/test_gen2.wav" controls></audio>
+        </div>
+        <div class="audio-row__item">
+          <label>reference:</label>
+          <audio src="static/test_ref2.wav" controls></audio>
+        </div>
+      </div>
+      <p>Eine der schlimmsten Drogen ist das Geld.</p>
+    </div>
+    <div class="sample">
+      <div class="audio-row">
+        <div class="audio-row__item">
+          <label>generated:</label>
+          <audio src="static/test_gen3.wav" controls></audio>
+        </div>
+        <div class="audio-row__item">
+          <label>reference:</label>
+          <audio src="static/test_ref3.wav" controls></audio>
+        </div>
+      </div>
+      <p>
+        Doch auch mit kleinen Dingen können sie einen großen Effekt erzielen.
+      </p>
+    </div>
+    <div class="sample">
+      <div class="audio-row">
+        <div class="audio-row__item">
+          <label>generated:</label>
+          <audio src="static/test_gen4.wav" controls></audio>
+        </div>
+        <div class="audio-row__item">
+          <label>reference:</label>
+          <audio src="static/test_ref4.wav" controls></audio>
+        </div>
+      </div>
+      <p>Warum nicht ein bisschen herumspinnen?</p>
+    </div>
+
+    <h2>Emotional speech samples</h2>
+    <ol>
+      <li>🙂 neutral</li>
+      <li>😀 amused</li>
+      <li>😠 angry</li>
+      <li>🤢 disgusted</li>
+      <li>😵 drunk</li>
+      <li>😔 sleepy</li>
+      <li>😲 surprised</li>
+      <li>🤫 whispering</li>
+    </ol>
+    <p>
+      Und wieder überkommt mich dieses, nicht endende Gefühl der Zärtlichkeit.
+    </p>
+    <div class="audio-box">
+      <div class="audio-item">
+        (1)🙂<audio src="static/emo_0_0.wav" controls></audio>
+      </div>
+      <div class="audio-item">
+        (2)😀<audio src="static/emo_0_1.wav" controls></audio>
+      </div>
+      <div class="audio-item">
+        (3)😠<audio src="static/emo_0_2.wav" controls></audio>
+      </div>
+      <div class="audio-item">
+        (4)🤢<audio src="static/emo_0_3.wav" controls></audio>
+      </div>
+      <div class="audio-item">
+        (5)😵<audio src="static/emo_0_4.wav" controls></audio>
+      </div>
+      <div class="audio-item">
+        (6)😔<audio src="static/emo_0_5.wav" controls></audio>
+      </div>
+      <div class="audio-item">
+        (7)😲<audio src="static/emo_0_6.wav" controls></audio>
+      </div>
+      <div class="audio-item">
+        (8)🤫<audio src="static/emo_0_7.wav" controls></audio>
+      </div>
+    </div>
+    <br />
+    <p>Habe Mut, dich deines eigenen Verstandes zu bedienen.</p>
+    <div class="audio-box">
+      <div class="audio-item">
+        (1)🙂<audio src="static/emo_1_0.wav" controls></audio>
+      </div>
+      <div class="audio-item">
+        (2)😀<audio src="static/emo_1_1.wav" controls></audio>
+      </div>
+      <div class="audio-item">
+        (3)😠<audio src="static/emo_1_2.wav" controls></audio>
+      </div>
+      <div class="audio-item">
+        (4)🤢<audio src="static/emo_1_3.wav" controls></audio>
+      </div>
+      <div class="audio-item">
+        (5)😵<audio src="static/emo_1_4.wav" controls></audio>
+      </div>
+      <div class="audio-item">
+        (6)😔<audio src="static/emo_1_5.wav" controls></audio>
+      </div>
+      <div class="audio-item">
+        (7)😲<audio src="static/emo_1_6.wav" controls></audio>
+      </div>
+      <div class="audio-item">
+        (8)🤫<audio src="static/emo_1_7.wav" controls></audio>
+      </div>
+    </div>
+
+    <script>
+      const audioOutputs = document.querySelectorAll("audio");
+      audioOutputs.forEach((a) => (a.volume = 0.42));
+    </script>
+  </body>
+  <footer></footer>
+</html>

@@ -1,301 +1,361 @@
 <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Samples</title>
-        <style>
-            
-        * {
-          box-sizing: border-box;
-        }
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Samples</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
 
-        body {
-            margin-left: 2rem;
-        }
-        header {
-          padding-top: 0.5rem;
-          height: 5rem;
-        }
-        .sample {
-            font-family: sans-serif;
-            font-weight: 500;
-            font-size: 1.2rem;
-            width: max(60vw, 60rem);
-            border-bottom: 2px solid #aaa;
-            padding: 0.5rem 0 0.5rem 0;
-          }
-        .audio-wrapper {
-            display: flex;               
-            align-items: center;
-            justify-content: space-between;
-            width: 60rem;
-            flex-wrap: wrap;
-        }
-        .audio-wrapper label {
-            display: inline-block;         
-            width: 3.5rem;
-        }
-        .audio-row {
-            display: flex;
-            align-items: center;
-        }
-        audio {
-            height: 2rem;
-            width: 22rem;
-            margin-right: 1rem;
-        }
-        .text-arabic {
-            font-size: 1.6rem;
-            margin: 0.5rem;
-         }
-        .row-title {
-            width: 6rem;
-         }
+      body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: 2rem;
+      }
 
-        input[type=checkbox] {
-            height: 1rem;
-            width: 1rem;
-         }
+      header {
+        padding-top: 0.5rem;
+        height: 5rem;
+      }
+      .sample {
+        font-family: sans-serif;
+        font-weight: 500;
+        font-size: 1.2rem;
+        /* width: max(60vw, 42rem); */
+        width: 47rem;
+        border-bottom: 2px solid #aaa;
+        padding: 0.5rem 0 0.5rem 0;
+      }
 
-        label[for="denoiser"] {
-            font-size: 1.2rem;
+      .sample:last-child {
+        border-bottom: 2px solid #000;
+      }
+      .audio-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 42rem;
+        flex-wrap: wrap;
+      }
+      .audio-wrapper label {
+        display: inline-block;
+        width: 3.5rem;
+      }
+      .audio-row {
+        display: flex;
+        align-items: center;
+      }
+      audio {
+        height: 2rem;
+        width: 16.5rem;
+        margin-right: 1rem;
+      }
+      .text-arabic {
+        font-size: 1.5rem;
+        margin: 0.5rem;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+        border-right: #37a90d 2px solid;
+      }
+      .row-title {
+        width: 6rem;
+      }
 
-         }
-    
-        .info-box {
-          font-size: 1.1rem;
-          font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-          margin-left: 0.12rem;
-          border-left: 2px #ccc solid;
-          padding-left: 0.3rem;
-        }
-        </style>
-        <title>Audio samples</title>
-    </head>
-    <body>
+      p {
+        display: flex;
+        justify-content: left;
+        flex-direction: column;
+        justify-items: right;
+        /* font-size: 1.5rem; */
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0.5rem 0 0rem 0;
+        flex-wrap: wrap;
+      }
+
+      .p_arab {
+        font-size: 1.5rem;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+        border-right: #37a90d 2px solid;
+        padding: 0.3rem 0.5rem 0.5rem 0;
+      }
+
+      .p_trans {
+        font-size: 1.2rem;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+        border-left: #7e7e7e 2px solid;
+        padding: 0 0 0 0.5rem;
+      }
+
+      .text-info {
+        width: 47rem;
+        border-left: #ccc 2px solid;
+        padding-left: 0.5rem;
+        font-size: 1.1rem;
+      }
+    </style>
+    <title>Audio samples</title>
+  </head>
+  <body>
     <h1>Audio samples</h1>
     <div class="sample">
       <audio src="static/g_wav0.wav" controls></audio>
-      <div class="text-arabic" dir="ltr">
-        أَلسَّلامُ عَلَيكُم يا صَديقي
-      </div>      
-      &lt;assalaamu Ealaykum yaa Sadiiqii
-    </div>
-    <div class="sample">
-      <audio src="static/g_wav1.wav" controls></audio>
-      <div class="text-arabic" dir="ltr">
-        أَلسَّلامُ عَلَيكُم يا صَديقي
-      </div>      
-      &lt;assalaamu Ealaykum yaa Sadiiqii (speed: 0.75)
-    </div>
-    <div class="sample">
-      <audio src="static/g_wav2.wav" controls></audio>
-      <div class="text-arabic" dir="ltr">
-        أَلسَّلامُ عَلَيكُم يا صَديقي
-      </div>      
-      &lt;assalaamu Ealaykum yaa Sadiiqii (speed: 1.25)
+      <p>
+        <span class="p_arab" dir="rtl">أَلسَّلامُ عَلَيكُم يا صَدِيقِي</span>
+        <span class="p_trans">'as-salāmu 3alaykum yā Sadīqī</span>
+      </p>
     </div>
     <div class="sample">
       <audio src="static/g_wav3.wav" controls></audio>
-      <div class="text-arabic" dir="ltr">
-        أَلِف با تا ثا جِيم حَا خَا دَال ذَال را زَاي سِين شِين صَاد ضَاد طَا ظَا عَين غَين فَا قَاف كَاف لَام مِيم نُون هَا وَاو يَا
-      </div>      
-      &lt;alif baa taa ^aa jiim Haa xaa daal *aal raa zaaii siin $iin Saad Daad Taa Zaa Eayn gayn faa qaaf kaf laam miim nuun haa wauu yaa
+      <p>
+        <span class="p_arab" dir="rtl"
+          >أَلِف با تا ثا جِيم حَا خَا دَال ذَال را زَاي سِين شِين صَاد ضَاد طَا
+          ظَا عَين غَين فَا قَاف كَاف لَام مِيم نُون هَا وَاو يَا</span
+        >
+        <span class="p_trans"
+          >'alif bā tā ṯā jīm Hā xā dāl ḏāl rā zāy sīn šīn Sād Dād Tā Zā 3ayn
+          ḡayn fā qāf kāf lām mīm nūn hā wāw yā</span
+        >
+      </p>
     </div>
     <div class="sample">
       <audio src="static/g_wav4.wav" controls></audio>
-      <div class="text-arabic" dir="ltr">
-        سا دا تا ذا صا ضا طا ظا
-      </div>      
-      saa daa taa *aa Saa Daa Taa Zaa
+      <p>
+        <span class="p_arab" dir="rtl">سا دا تا ذا صا ضا طا ظا</span>
+        <span class="p_trans">sā dā tā ḏā Sā Dā Tā Zā</span>
+      </p>
     </div>
     <div class="sample">
       <audio src="static/g_wav5.wav" controls></audio>
-      <div class="text-arabic" dir="ltr">
-        عَعَعَعَعَعَعَعَعَعَعَعَعَعَعَ
-      </div>      
-      EaEaEaEaEaEaEaEaEaEaEaEaEaEaEa
+      <p>
+        <span class="p_arab" dir="rtl">عَعَعَعَعَعَعَعَعَعَعَعَعَعَعَ</span>
+        <span class="p_trans">3a3a3a3a3a3a3a3a3a3a3a3a3a3a3a</span>
+      </p>
     </div>
+
     <h2>Samples from the test set</h2>
-    Samples from the test set of Nawar Halabi's <a href="http://en.arabicspeechcorpus.com/">Arabic Speech Corpus</a>.
-    <p class="info-box">
-      mse: generated by model trained with mse loss<br>
-      adv: generated by model trained with mse and adversarial loss<br>
-      ref: ground truth from test set (48kHz)<br>
-      rec: ref -> resample to 22050Hz -> mel -> hifigan -> rec<br>
-    </p>
 
-    <input type="checkbox" id="denoiser" oninput="onCheckboxCheck(event)" /> 
-    <label for="denoiser">Use hifigan denoiser</label>
+    <div class="text-info">
+      Samples from the test set of Nawar Halabi's
+      <a href="http://en.arabicspeechcorpus.com/">Arabic Speech Corpus</a>.
+      <p class="info-box">
+        mse: generated by model trained with mse loss<br />
+        adv: generated by model trained with mse and adversarial loss<br />
+        ref: ground truth from test set (48kHz)<br />
+        rec: ref -> resample to 22050Hz -> mel -> hifigan -> rec<br />
+      </p>
+
+      <input type="checkbox" id="denoiser" oninput="onCheckboxCheck(event)" />
+      <label for="denoiser">Use HifiGAN denoiser</label>
+    </div>
 
     <div class="sample">
       <div class="audio-wrapper">
         <div class="audio-row switch">
           <span class="row-title">tacotron2</span>
           <label>mse:</label>
-          <audio src="static/t_tc2_gen_mse0.wav" controls></audio>    
+          <audio src="static/t_tc2_gen_mse0.wav" controls></audio>
           <label>adv:</label>
-          <audio src="static/t_tc2_gen_adv0.wav" controls></audio> 
-      </div>  
-      <div class="audio-row switch">
+          <audio src="static/t_tc2_gen_adv0.wav" controls></audio>
+        </div>
+        <div class="audio-row switch">
           <span class="row-title">fastpitch</span>
           <label>mse:</label>
-          <audio src="static/t_fp_gen_mse0.wav" controls></audio>    
+          <audio src="static/t_fp_gen_mse0.wav" controls></audio>
           <label>adv:</label>
-          <audio src="static/t_fp_gen_adv0.wav" controls></audio> 
-      </div>  
-      <div class="audio-row ">
+          <audio src="static/t_fp_gen_adv0.wav" controls></audio>
+        </div>
+        <div class="audio-row">
           <span class="row-title">reference</span>
           <label>ref:</label>
-          <audio src="static/t_wav_ref0.wav" controls></audio>    
+          <audio src="static/t_wav_ref0.wav" controls></audio>
           <label>rec:</label>
-          <audio src="static/t_wav_rec0.wav" controls></audio> 
-      </div>  
-       
+          <audio src="static/t_wav_rec0.wav" controls></audio>
+        </div>
       </div>
-      <div class="text-arabic" dir="ltr">
-        
-      </div>      
-      &lt;ataaHat lilbaa&lt;iEi lmutajawwili &lt;an yakuuna jaa*iban lilmuwaaTini l&lt;aqalli daxlan
+      <p>
+        <span class="p_arab" dir="rtl"
+          >أتَاحَتْ لِلبَائِعِ المُتَجَوِّلِ أنْ يَكُونَ جَاذِباً لِلمُوَاطِنِ
+          الأقَلِّ دَخْلاً</span
+        >
+        <span class="p_trans"
+          >'atāHat lilbā'i3i l-mutajawwili 'an yakūna jāḏiban lilmuwāTini
+          l-'qalli daxlan</span
+        >
+      </p>
     </div>
+
     <div class="sample">
       <div class="audio-wrapper">
         <div class="audio-row switch">
           <span class="row-title">tacotron2</span>
           <label>mse:</label>
-          <audio src="static/t_tc2_gen_mse1.wav" controls></audio>    
+          <audio src="static/t_tc2_gen_mse1.wav" controls></audio>
           <label>adv:</label>
-          <audio src="static/t_tc2_gen_adv1.wav" controls></audio> 
-      </div>  
-      <div class="audio-row switch">
+          <audio src="static/t_tc2_gen_adv1.wav" controls></audio>
+        </div>
+        <div class="audio-row switch">
           <span class="row-title">fastpitch</span>
           <label>mse:</label>
-          <audio src="static/t_fp_gen_mse1.wav" controls></audio>    
+          <audio src="static/t_fp_gen_mse1.wav" controls></audio>
           <label>adv:</label>
-          <audio src="static/t_fp_gen_adv1.wav" controls></audio> 
-      </div>  
-      <div class="audio-row ">
+          <audio src="static/t_fp_gen_adv1.wav" controls></audio>
+        </div>
+        <div class="audio-row">
           <span class="row-title">reference</span>
           <label>ref:</label>
-          <audio src="static/t_wav_ref1.wav" controls></audio>    
+          <audio src="static/t_wav_ref1.wav" controls></audio>
           <label>rec:</label>
-          <audio src="static/t_wav_rec1.wav" controls></audio> 
-      </div>  
-       
+          <audio src="static/t_wav_rec1.wav" controls></audio>
+        </div>
       </div>
-      <div class="text-arabic" dir="ltr">
-        
-      </div>      
-      &lt;aHrazat muntaxabaatu lbaraaziili wa&lt;lmaanyaa waruusyaa fawzan fii muqaabalaatihim l&lt;iEdaadiiyati llatii &lt;uqiimat istiEdaadan linihaa&lt;iiyaati ka&lt;si lEaalam &lt;allatii satanTaliqu baEda &lt;aqalli min &lt;usbuuE
+      <p>
+        <span class="p_arab" dir="rtl"
+          >أَحْرَزَتْ مُنْتَخَبَاتُ البَرَازِيل وَأَلمَانِيَا وَرُوسِيَا فَوْزاً
+          فِي مُقَابَلَاتِهِم الإِعْدَادِيَّةِ الَّتِي أُقِيمَتْ اِسْتِعْدَاداً
+          لِنِهَائِيَاتِ كَأْسِ العَالَم اَلَّتِي سَتَنْطَلِقُ بَعْدَ أَقَلِّ
+          مِنْ أُسْبُوع</span
+        >
+        <span class="p_trans"
+          >'aHrazat muntaxabātu l-barāzīl wa'almāniyā warūsiyā fawzan fī
+          muqābalātihim al-'i3dādiyyati allatī 'uqīmat isti3dādan linihā'iyāti
+          ka'si l-3ālam allatī satanTaliqu ba3da 'aqalli min 'usbū3</span
+        >
+      </p>
     </div>
+
     <div class="sample">
       <div class="audio-wrapper">
         <div class="audio-row switch">
           <span class="row-title">tacotron2</span>
           <label>mse:</label>
-          <audio src="static/t_tc2_gen_mse2.wav" controls></audio>    
+          <audio src="static/t_tc2_gen_mse2.wav" controls></audio>
           <label>adv:</label>
-          <audio src="static/t_tc2_gen_adv2.wav" controls></audio> 
-      </div>  
-      <div class="audio-row switch">
+          <audio src="static/t_tc2_gen_adv2.wav" controls></audio>
+        </div>
+        <div class="audio-row switch">
           <span class="row-title">fastpitch</span>
           <label>mse:</label>
-          <audio src="static/t_fp_gen_mse2.wav" controls></audio>    
+          <audio src="static/t_fp_gen_mse2.wav" controls></audio>
           <label>adv:</label>
-          <audio src="static/t_fp_gen_adv2.wav" controls></audio> 
-      </div>  
-      <div class="audio-row ">
+          <audio src="static/t_fp_gen_adv2.wav" controls></audio>
+        </div>
+        <div class="audio-row">
           <span class="row-title">reference</span>
           <label>ref:</label>
-          <audio src="static/t_wav_ref2.wav" controls></audio>    
+          <audio src="static/t_wav_ref2.wav" controls></audio>
           <label>rec:</label>
-          <audio src="static/t_wav_rec2.wav" controls></audio> 
-      </div>  
-       
+          <audio src="static/t_wav_rec2.wav" controls></audio>
+        </div>
       </div>
-      <div class="text-arabic" dir="ltr">
-        
-      </div>      
-      &lt;axfaqa majlisu nnuuwaabi llubnaaniiyu fii xtiyaari ra&lt;iisin jadiidin lilbilaadi xalafan lirra&lt;iisi lHaaliiyi lla*ii tantahii wilaayatuhu fii lxaamisi walEi$riin min maayuu &lt;ayaara lmuqbil
+      <p>
+        <span class="p_arab" dir="rtl"
+          >أَخْفَقَ مَجْلِسُ النُّوَابِ اللُّبْنَانِيُّ فِي اِخْتِيَارِ رَئِيسٍ
+          جَدِيدٍ لِلبَلَادِ خَلَفاً لِلرَّئِيسِ الحَالِيِّ الَّذِي تَنْتَهِي
+          وِلَايَتُهُ فِي الخَامِسِ وَالعِشْرِينْ مِنْ مَايُو أَيَارَ
+          المُقْبِل</span
+        >
+        <span class="p_trans"
+          >'axfaqa majlisu n-nuwābi l-lubnāniyyu fī ixtiyāri ra'īsin jadīdin
+          lilbalādi xalafan lilrra'īsi l-Hāliyyi allaḏī tantahī wilāyatuhu fī
+          l-xāmisi wāl3išrīn min māyū 'ayāra l-muqbil</span
+        >
+      </p>
     </div>
+
     <div class="sample">
       <div class="audio-wrapper">
         <div class="audio-row switch">
           <span class="row-title">tacotron2</span>
           <label>mse:</label>
-          <audio src="static/t_tc2_gen_mse3.wav" controls></audio>    
+          <audio src="static/t_tc2_gen_mse3.wav" controls></audio>
           <label>adv:</label>
-          <audio src="static/t_tc2_gen_adv3.wav" controls></audio> 
-      </div>  
-      <div class="audio-row switch">
+          <audio src="static/t_tc2_gen_adv3.wav" controls></audio>
+        </div>
+        <div class="audio-row switch">
           <span class="row-title">fastpitch</span>
           <label>mse:</label>
-          <audio src="static/t_fp_gen_mse3.wav" controls></audio>    
+          <audio src="static/t_fp_gen_mse3.wav" controls></audio>
           <label>adv:</label>
-          <audio src="static/t_fp_gen_adv3.wav" controls></audio> 
-      </div>  
-      <div class="audio-row ">
+          <audio src="static/t_fp_gen_adv3.wav" controls></audio>
+        </div>
+        <div class="audio-row">
           <span class="row-title">reference</span>
           <label>ref:</label>
-          <audio src="static/t_wav_ref3.wav" controls></audio>    
+          <audio src="static/t_wav_ref3.wav" controls></audio>
           <label>rec:</label>
-          <audio src="static/t_wav_rec3.wav" controls></audio> 
-      </div>  
-       
+          <audio src="static/t_wav_rec3.wav" controls></audio>
+        </div>
       </div>
-      <div class="text-arabic" dir="ltr">
-        
-      </div>      
-      &lt;i* sayaHDuru liqaa&lt;a haa*aa lEaami xamsun wa^alaa^uuna minhum
+      <p>
+        <span class="p_arab" dir="rtl"
+          >إِذْ سَيَحْضُرُ لِقَاءَ هَذَا العَامِ خَمْسٌ وَثَلَاثُونَ
+          مِنْهُم</span
+        >
+        <span class="p_trans"
+          >'iḏ sayaHDuru liqā'a haḏā l-3āmi xamsun waṯalāṯūna minhum</span
+        >
+      </p>
     </div>
+
     <div class="sample">
       <div class="audio-wrapper">
         <div class="audio-row switch">
           <span class="row-title">tacotron2</span>
           <label>mse:</label>
-          <audio src="static/t_tc2_gen_mse4.wav" controls></audio>    
+          <audio src="static/t_tc2_gen_mse4.wav" controls></audio>
           <label>adv:</label>
-          <audio src="static/t_tc2_gen_adv4.wav" controls></audio> 
-      </div>  
-      <div class="audio-row switch">
+          <audio src="static/t_tc2_gen_adv4.wav" controls></audio>
+        </div>
+        <div class="audio-row switch">
           <span class="row-title">fastpitch</span>
           <label>mse:</label>
-          <audio src="static/t_fp_gen_mse4.wav" controls></audio>    
+          <audio src="static/t_fp_gen_mse4.wav" controls></audio>
           <label>adv:</label>
-          <audio src="static/t_fp_gen_adv4.wav" controls></audio> 
-      </div>  
-      <div class="audio-row ">
+          <audio src="static/t_fp_gen_adv4.wav" controls></audio>
+        </div>
+        <div class="audio-row">
           <span class="row-title">reference</span>
           <label>ref:</label>
-          <audio src="static/t_wav_ref4.wav" controls></audio>    
+          <audio src="static/t_wav_ref4.wav" controls></audio>
           <label>rec:</label>
-          <audio src="static/t_wav_rec4.wav" controls></audio> 
-      </div>  
-       
+          <audio src="static/t_wav_rec4.wav" controls></audio>
+        </div>
       </div>
-      <div class="text-arabic" dir="ltr">
-        
-      </div>      
-      &lt;aElanati lHukuumatu lmiSriiyatu Ean waqfi taqdiimi ddaEmi nnaqdiiyi limuzaariEii lquTni &lt;iEtibaaran mina lmuusimi zziraaEiiyi lmuqbil
+      <p>
+        <span class="p_arab" dir="rtl"
+          >أَعْلَنَاتِ الحُكُومَةُ المِصْرِيَةُ عَنْ وَقْفِ تَقْدِيمِ الدَّعْمِ
+          النَّقْدِيِّ لِمُزَارِعِي القُتْنِي إِعْتِبَاراً مِنَ المُوسِمِ
+          الزِّرَاعِيِّ المُقْبِل</span
+        >
+        <span class="p_trans"
+          >'a3lanāti l-Hukūmatu l-miSriyatu 3an waqfi taqdīmi d-da3mi n-naqdiyyi
+          limuzāri3ī l-qutnī 'i3tibāran mina l-mūsimi z-zirā3iyyi l-muqbil</span
+        >
+      </p>
     </div>
+
     <script>
-      const audioOutputs = document.querySelectorAll('audio');
-      audioOutputs.forEach(a => a.volume = 0.42);
+      const audioOutputs = document.querySelectorAll("audio");
+      audioOutputs.forEach((a) => (a.volume = 0.42));
 
       const onCheckboxCheck = (ev) => {
         const isChecked = ev.target.checked;
-        const rFrom = isChecked ? '.wav' : '_d.wav'
-        const rTo = isChecked ? '_d.wav' : '.wav'
+        const rFrom = isChecked ? ".wav" : "_d.wav";
+        const rTo = isChecked ? "_d.wav" : ".wav";
         console.log(isChecked);
-        document.querySelectorAll('.switch').forEach(aw => {
-          aw.querySelectorAll('audio').forEach(            
-            a => a.src = a.src.replace(rFrom, rTo) 
-            );
+        document.querySelectorAll(".switch").forEach((aw) => {
+          aw.querySelectorAll("audio").forEach(
+            (a) => (a.src = a.src.replace(rFrom, rTo))
+          );
         });
       };
     </script>
-    </body>
-    </html>
-    
+  </body>
+</html>

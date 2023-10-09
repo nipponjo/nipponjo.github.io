@@ -26,8 +26,8 @@
         font-family: sans-serif;
         font-weight: 500;
         font-size: 1.2rem;
-        /* width: max(60vw, 42rem); */
-        width: 47rem;
+        width: min(90vw, 47rem);
+        /* width: 47rem; */
         border-bottom: 2px solid #aaa;
         padding: 0.5rem 0 0.5rem 0;
       }
@@ -94,10 +94,35 @@
       }
 
       .text-info {
-        width: 47rem;
+        width: 47rem;        
+        font-size: 1.1rem;
+      }
+
+      .info-box {
         border-left: #ccc 2px solid;
         padding-left: 0.5rem;
-        font-size: 1.1rem;
+      }
+
+      h1 {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      h2 {
+        margin-top: 3rem;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      footer {
+        height: 5rem;
+      }
+
+      #denoiser {
+        margin-top: 0.5rem;        
+      }
+
+      label[for="denoiser"] {
+        font-size: 1.15rem;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
       }
     </style>
     <title>Audio samples</title>
@@ -217,13 +242,13 @@
       </div>
       <p>
         <span class="p_arab" dir="rtl"
-          >أَحْرَزَتْ مُنْتَخَبَاتُ البَرَازِيل وَأَلمَانِيَا وَرُوسِيَا فَوْزاً
+          >أَحْرَزَتْ مُنْتَخَبَاتُ البَرَازِيلِ وَأَلمَانِيَا وَرُوسِيَا فَوْزاً
           فِي مُقَابَلَاتِهِم الإِعْدَادِيَّةِ الَّتِي أُقِيمَتْ اِسْتِعْدَاداً
           لِنِهَائِيَاتِ كَأْسِ العَالَم اَلَّتِي سَتَنْطَلِقُ بَعْدَ أَقَلِّ
           مِنْ أُسْبُوع</span
         >
         <span class="p_trans"
-          >'aHrazat muntaxabātu l-barāzīl wa'almāniyā warūsiyā fawzan fī
+          >'aHrazat muntaxabātu l-barāzīli wa'almāniyā warūsiyā fawzan fī
           muqābalātihim al-'i3dādiyyati allatī 'uqīmat isti3dādan linihā'iyāti
           ka'si l-3ālam allatī satanTaliqu ba3da 'aqalli min 'usbū3</span
         >
@@ -256,13 +281,13 @@
       </div>
       <p>
         <span class="p_arab" dir="rtl"
-          >أَخْفَقَ مَجْلِسُ النُّوَابِ اللُّبْنَانِيُّ فِي اِخْتِيَارِ رَئِيسٍ
+          >أَخْفَقَ مَجْلِسُ النُّوَّابِ اللُّبْنَانِيُّ فِي اِخْتِيَارِ رَئِيسٍ
           جَدِيدٍ لِلبِلَادِ خَلَفاً لِلرَّئِيسِ الحَالِيِّ الَّذِي تَنْتَهِي
           وِلَايَتُهُ فِي الخَامِسِ وَالعِشْرِينْ مِنْ مَايُو أَيَارَ
           المُقْبِل</span
         >
         <span class="p_trans"
-          >'axfaqa majlisu n-nuwābi l-lubnāniyyu fī ixtiyāri ra'īsin jadīdin
+          >'axfaqa majlisu n-nuwwābi l-lubnāniyyu fī ixtiyāri ra'īsin jadīdin
           lilbilādi xalafan lilrra'īsi l-Hāliyyi allaḏī tantahī wilāyatuhu fī
           l-xāmisi wāl3išrīn min māyū 'ayāra l-muqbil</span
         >
@@ -330,16 +355,16 @@
       </div>
       <p>
         <span class="p_arab" dir="rtl"
-          >أَعْلَنَاتِ الحُكُومَةُ المِصْرِيَةُ عَنْ وَقْفِ تَقْدِيمِ الدَّعْمِ
-          النَّقْدِيِّ لِمُزَارِعِي القُتْنِي إِعْتِبَاراً مِنَ المُوسِمِ
+          >أَعْلَنَتِ الحُكُومَةُ المِصْرِيَّةُ عَنْ وَقْفِ تَقْدِيمِ الدَّعْمِ
+          النَّقْدِيِّ لِمُزَارِعِي القُطْنِ إِعْتِبَاراً مِنَ المُوسِمِ
           الزِّرَاعِيِّ المُقْبِل</span
         >
         <span class="p_trans"
-          >'a3lanāti l-Hukūmatu l-miSriyatu 3an waqfi taqdīmi d-da3mi n-naqdiyyi
-          limuzāri3ī l-qutnī 'i3tibāran mina l-mūsimi z-zirā3iyyi l-muqbil</span
+          >'a3lanati l-Hukūmatu l-miSriyyatu 3an waqfi taqdīmi d-da3mi n-naqdiyyi
+          limuzāri3ī l-quTni 'i3tibāran mina l-mūsimi z-zirā3iyyi l-muqbil</span
         >
       </p>
-    </div>
+    </div>    
 
     <script>
       const audioOutputs = document.querySelectorAll("audio");
@@ -358,4 +383,5 @@
       };
     </script>
   </body>
+  <footer></footer>
 </html>

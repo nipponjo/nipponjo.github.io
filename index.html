@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="nosnippet,nofollow" />
+    <meta name="googlebot" content="noindex" />
+    <title>Hello World Page</title>
+
+    <style>
+      :root {
+        --bg-color: inherit;
+        --caret-color: rgb(166, 163, 177);
+        --typewriterSpeed: 6s;
+        --typewriterCharacters: 12;
+      }
+
+      body {
+        /* background-color: #15151a; */
+        background-attachment: fixed;
+        background-image: linear-gradient(#15151a, #664a80);
+        /* background-color: #100d0d; */
+      }
+
+      img {
+        position: absolute;
+        top: 12rem;
+        left: calc(50% - 18rem);
+        height: 20rem;
+        width: 20rem;
+        border-radius: 25%;
+        /* margin: 3rem; */
+        /* box-shadow: 0px 12px 12px white; */
+      }
+
+      h1 {
+        font-size: clamp(1rem, 3vw + 1rem, 2.25rem);
+        color: white;
+        border-right: 0.13em solid var(--caret-color);
+        /* margin: 0.5rem auto;  */
+        font-family: monospace;
+        white-space: pre;
+      }
+
+      .container {
+        display: flex;
+        width: 100%;
+        margin-top: 8vh;
+        /* display: flex; */
+        justify-content: center;
+        align-items: center;
+      }
+
+      .text-container {
+        position: relative;
+        left: 13rem;
+        top: 10rem;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+      }
+
+      .link-container {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+      }
+
+      a {
+        font-size: 1.5rem;
+        text-decoration: none;
+        color: #ddd;
+        cursor: pointer;
+        margin: 0.5rem;
+      }
+
+      a:hover {
+        color: white;
+        transition: 0.33s;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img src="static/20231211_192327._m2.jpg" alt="Foto" />
+
+      <div class="text-container">
+        <h1 id="title-text"></h1>
+
+        <div class="link-container">
+          <a href="https://www.linkedin.com/in/lars-nippert/">LinkedIn</a>
+          <a href="https://github.com/nipponjo">GitHub</a>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      (() => {
+        let i = 0;
+        const txt = "Hello World!";
+
+        const typeWriter = () => {
+          if (i < txt.length) {
+            document.getElementById("title-text").innerHTML += txt.charAt(i);
+            i++;
+            setTimeout(typeWriter, 150 + Math.random() * 420);
+            return;
+          }
+          document.getElementById("title-text").innerHTML += "😀";
+        };
+
+        typeWriter();
+      })();
+    </script>
+  </body>
+</html>

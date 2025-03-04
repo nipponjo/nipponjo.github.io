@@ -3,6 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="nosnippet,nofollow" />
+    <meta name="googlebot" content="noindex" />
     <title>Speaker Samples</title>
 
     <style>
@@ -12,6 +14,9 @@
       audio {
         width: 10rem;
         height: 2rem;
+      }
+      section {
+        margin: auto;
       }
       .audio-l {
         width: 12.5rem;
@@ -31,6 +36,11 @@
         width: 3rem;
       }
       td:first-child {
+        font-size: 1.2rem;
+        font-weight: bold;
+      }
+
+      .dbl td:nth-child(-n+2) {
         font-size: 1.2rem;
         font-weight: bold;
       }
@@ -71,6 +81,10 @@
 
       footer {
         height: 12rem;
+      }
+
+      .centered {
+        text-align: center;
       }
     </style>
   </head>
@@ -243,6 +257,101 @@
           </tr>
         </tbody>
       </table>
+
+      <section>
+        <h2 id="models-cmp" class="centered">Models / Vocoders</h2>
+
+        <table class="dbl">
+          <thead>
+              <tr>
+              <th>Model</th>
+              <th>Vocoder</th>
+              <th>S0</th>
+              <th>S1</th>
+              <th>S2</th>
+              <th>S3</th>
+              </tr>
+          </thead>        
+          <tbody>
+              <tr>
+                  <td>FastPitch</td>
+                  <td>HifiGAN</td>
+                  <td><audio class="audio-l" src="./static/p0s0v0m0.wav" controls></audio></td>
+                  <td><audio class="audio-l" src="./static/p0s1v0m0.wav" controls></audio></td>
+                  <td><audio class="audio-l" src="./static/p0s2v0m0.wav" controls></audio></td>
+                  <td><audio class="audio-l" src="./static/p0s3v0m0.wav" controls></audio></td>
+              </tr>
+              <tr>
+                  <td>Mixer128</td>
+                  <td>HifiGAN</td>
+                  <td><audio class="audio-l" src="./static/p0s0v0m1.wav" controls></audio></td>
+                  <td><audio class="audio-l" src="./static/p0s1v0m1.wav" controls></audio></td>
+                  <td><audio class="audio-l" src="./static/p0s2v0m1.wav" controls></audio></td>
+                  <td><audio class="audio-l" src="./static/p0s3v0m1.wav" controls></audio></td>
+              </tr>
+              <tr>
+                  <td>Mixer80</td>
+                  <td>HifiGAN</td>
+                  <td><audio class="audio-l" src="./static/p0s0v0m2.wav" controls></audio></td>
+                  <td><audio class="audio-l" src="./static/p0s1v0m2.wav" controls></audio></td>
+                  <td><audio class="audio-l" src="./static/p0s2v0m2.wav" controls></audio></td>
+                  <td><audio class="audio-l" src="./static/p0s3v0m2.wav" controls></audio></td>
+              </tr>
+              <tr>
+                  <td>FastPitch</td>
+                  <td>Vocos22k</td>
+                  <td><audio class="audio-l" src="./static/p0s0v1m0.wav" controls></audio></td>
+                  <td><audio class="audio-l" src="./static/p0s1v1m0.wav" controls></audio></td>
+                  <td><audio class="audio-l" src="./static/p0s2v1m0.wav" controls></audio></td>
+                  <td><audio class="audio-l" src="./static/p0s3v1m0.wav" controls></audio></td>
+              </tr>
+              <tr>
+                  <td>Mixer128</td>
+                  <td>Vocos22k</td>
+                  <td><audio class="audio-l" src="./static/p0s0v1m1.wav" controls></audio></td>
+                  <td><audio class="audio-l" src="./static/p0s1v1m1.wav" controls></audio></td>
+                  <td><audio class="audio-l" src="./static/p0s2v1m1.wav" controls></audio></td>
+                  <td><audio class="audio-l" src="./static/p0s3v1m1.wav" controls></audio></td>
+              </tr>
+              <tr>
+                  <td>Mixer80</td>
+                  <td>Vocos22k</td>
+                  <td><audio class="audio-l" src="./static/p0s0v1m2.wav" controls></audio></td>
+                  <td><audio class="audio-l" src="./static/p0s1v1m2.wav" controls></audio></td>
+                  <td><audio class="audio-l" src="./static/p0s2v1m2.wav" controls></audio></td>
+                  <td><audio class="audio-l" src="./static/p0s3v1m2.wav" controls></audio></td>
+              </tr>
+              <tr>
+                  <td>FastPitch</td>
+                  <td>Vocos44k</td>
+                  <td><audio class="audio-l" src="./static/p0s0v2m0.wav" controls></audio></td>
+                  <td><audio class="audio-l" src="./static/p0s1v2m0.wav" controls></audio></td>
+                  <td><audio class="audio-l" src="./static/p0s2v2m0.wav" controls></audio></td>
+                  <td><audio class="audio-l" src="./static/p0s3v2m0.wav" controls></audio></td>
+              </tr>
+              <tr>
+                  <td>Mixer128</td>
+                  <td>Vocos44k</td>
+                  <td><audio class="audio-l" src="./static/p0s0v2m1.wav" controls></audio></td>
+                  <td><audio class="audio-l" src="./static/p0s1v2m1.wav" controls></audio></td>
+                  <td><audio class="audio-l" src="./static/p0s2v2m1.wav" controls></audio></td>
+                  <td><audio class="audio-l" src="./static/p0s3v2m1.wav" controls></audio></td>
+              </tr>
+              <tr>
+                  <td>Mixer80</td>
+                  <td>Vocos44k</td>
+                  <td><audio class="audio-l" src="./static/p0s0v2m2.wav" controls></audio></td>
+                  <td><audio class="audio-l" src="./static/p0s1v2m2.wav" controls></audio></td>
+                  <td><audio class="audio-l" src="./static/p0s2v2m2.wav" controls></audio></td>
+                  <td><audio class="audio-l" src="./static/p0s3v2m2.wav" controls></audio></td>
+              </tr>
+          </tbody>
+      </table>
+  
+
+      </section>
+
+
 
     </main>
 

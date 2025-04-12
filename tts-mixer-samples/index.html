@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="nosnippet,nofollow" />
+    <meta name="googlebot" content="noindex" />
+    <title>MixerTTS Samples</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin-left: 2rem;
+      }
+      header {
+        padding-top: 0.5rem;
+        height: 5rem;
+      }
+      footer {
+        margin: 5rem 0;
+      }
+      p {
+        font-size: 1.2rem;
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0.8rem 0 0.5rem 0;
+      }
+      h2 {
+        margin-top: 2.5rem;
+      }
+
+      ol {
+        width: min(35rem, 90vw);
+        display: flex;
+        font-size: 1.2rem;
+        justify-content: left;
+        flex-wrap: wrap;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      ol li {
+        width: 10rem;
+      }
+      audio {
+        height: 2rem;
+        width: max(10rem, min(20rem, 90vw));
+        margin-right: 1rem;
+      }
+      .sample {
+        display: flex;
+        flex-direction: column;
+        font-family: sans-serif;
+        font-size: 1.2rem;
+        width: min(90vw, 60rem);
+        border-bottom: 2px solid #aaa;
+        padding: 0.5rem 0 0.5rem 0;
+      }
+      .sample>audio {
+        width: max(10rem, min(25rem, 90vw));
+      }
+      .audio-row {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+      }
+      .audio-row__item {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+      .audio-row__item label {
+        width: 6rem;
+      }
+      .audio-box {
+        display: flex;
+        flex-wrap: wrap;
+        width: min(60rem, 90vw);
+      }
+      .audio-box .audio-item {
+        font-size: 1.2rem;
+        display: flex;
+        align-items: center;
+      }
+      .audio-box audio {
+        width: max(10rem, min(15rem, 90vw));
+      }
+    </style>
+    <title>Audio samples</title>
+  </head>
+  <body>
+    <h1>Audio samples</h1>
+
+    <p>
+    dim=384 nparams: 20,1M
+    dim=128 nparams: 2,87M
+    dim=80 nparams: 1,48M
+    </p>
+
+    <div class="sample">
+      References from the training set (sample rate = 22050Hz)
+
+      <div class="audio-row">
+        <div class="audio-row__item">
+          <label>Ref (1)</label>
+          <audio src="static/samples_lj/LJ001-0001.wav" controls></audio>
+        </div>
+        <div class="audio-row__item">
+          <label>Ref (2)</label>
+          <audio src="static/samples_lj/LJ001-0003.wav" controls></audio>
+        </div>
+        <div class="audio-row__item">
+          <label>Ref (3)</label>
+          <audio src="static/samples_lj/LJ001-0004.wav" controls></audio>
+        </div>
+        <span></span>
+      </div>
+
+    </div>
+
+
+    <div class="sample">
+
+      <div class="audio-row">
+        <div class="audio-row__item">
+          <label>d=384:</label>
+          <audio src="static/samples_lj/sample_u1_d384_v22.wav" controls></audio>
+        </div>
+        <div class="audio-row__item">
+          <label>d=128:</label>
+          <audio src="static/samples_lj/sample_u1_d128_v22.wav" controls></audio>
+        </div>
+        <div class="audio-row__item">
+          <label>d=80:</label>
+          <audio src="static/samples_lj/sample_u1_d80_v22.wav" controls></audio>
+        </div>
+        <span>(sample rate = 22050Hz)</span>
+      </div>
+      <div class="audio-row">       
+        <div class="audio-row__item">
+          <label>d=384:</label>
+          <audio src="static/samples_lj/sample_u1_d384_v44.wav" controls></audio>
+        </div>
+        <div class="audio-row__item">
+          <label>d=128:</label>
+          <audio src="static/samples_lj/sample_u1_d128_v44.wav" controls></audio>
+        </div>
+        <div class="audio-row__item">
+          <label>d=80:</label>
+          <audio src="static/samples_lj/sample_u1_d80_v44.wav" controls></audio>
+        </div>
+        <span>(sample rate = 44100Hz)</span>
+      </div>
+
+      <p>
+        This paper describes Mixer-TTS, a non-autoregressive model for mel-spectrogram generation.
+      </p>
+    </div>
+    <div class="sample">
+      <div class="audio-row">
+        <div class="audio-row__item">
+          <label>d=384:</label>
+          <audio src="static/samples_lj/sample_u2_d384_v22.wav" controls></audio>
+        </div>
+        <div class="audio-row__item">
+          <label>d=128:</label>
+          <audio src="static/samples_lj/sample_u2_d128_v22.wav" controls></audio>
+        </div>
+        <div class="audio-row__item">
+          <label>d=80:</label>
+          <audio src="static/samples_lj/sample_u2_d80_v22.wav" controls></audio>
+        </div>
+        <span>(sample rate = 22050Hz)</span>
+      </div>
+      <div class="audio-row">       
+        <div class="audio-row__item">
+          <label>d=384:</label>
+          <audio src="static/samples_lj/sample_u2_d384_v44.wav" controls></audio>
+        </div>
+        <div class="audio-row__item">
+          <label>d=128:</label>
+          <audio src="static/samples_lj/sample_u2_d128_v44.wav" controls></audio>
+        </div>
+        <div class="audio-row__item">
+          <label>d=80:</label>
+          <audio src="static/samples_lj/sample_u2_d80_v44.wav" controls></audio>
+        </div>
+        <span>(sample rate = 44100Hz)</span>
+      </div>
+      <p>
+        The model is based on the MLP-Mixer architecture adapted for speech synthesis.
+      </p>
+    </div>
+    <div class="sample">
+      <div class="audio-row">
+        <div class="audio-row__item">
+          <label>d=384:</label>
+          <audio src="static/samples_lj/sample_u3_d384_v22.wav" controls></audio>
+        </div>
+        <div class="audio-row__item">
+          <label>d=128:</label>
+          <audio src="static/samples_lj/sample_u3_d128_v22.wav" controls></audio>
+        </div>
+        <div class="audio-row__item">
+          <label>d=80:</label>
+          <audio src="static/samples_lj/sample_u3_d80_v22.wav" controls></audio>
+        </div>
+        <span>(sample rate = 22050Hz)</span>
+      </div>
+      <div class="audio-row">       
+        <div class="audio-row__item">
+          <label>d=384:</label>
+          <audio src="static/samples_lj/sample_u3_d384_v44.wav" controls></audio>
+        </div>
+        <div class="audio-row__item">
+          <label>d=128:</label>
+          <audio src="static/samples_lj/sample_u3_d128_v44.wav" controls></audio>
+        </div>
+        <div class="audio-row__item">
+          <label>d=80:</label>
+          <audio src="static/samples_lj/sample_u3_d80_v44.wav" controls></audio>
+        </div>
+        <span>(sample rate = 44100Hz)</span>
+      </div>
+      <p>
+        The basic Mixer-TTS contains pitch and duration predictors, with the latter being trained with an unsupervised TTS alignment framework.
+      </p>
+    </div>
+
+    <div class="sample">
+      <div class="audio-row">
+        <div class="audio-row__item">
+          <label>d=384:</label>
+          <audio src="static/samples_lj/sample_u4_d384_v22.wav" controls></audio>
+        </div>
+        <div class="audio-row__item">
+          <label>d=128:</label>
+          <audio src="static/samples_lj/sample_u4_d128_v22.wav" controls></audio>
+        </div>
+        <div class="audio-row__item">
+          <label>d=80:</label>
+          <audio src="static/samples_lj/sample_u4_d80_v22.wav" controls></audio>
+        </div>
+        <span>(sample rate = 22050Hz)</span>
+      </div>
+      <div class="audio-row">       
+        <div class="audio-row__item">
+          <label>d=384:</label>
+          <audio src="static/samples_lj/sample_u4_d384_v44.wav" controls></audio>
+        </div>
+        <div class="audio-row__item">
+          <label>d=128:</label>
+          <audio src="static/samples_lj/sample_u4_d128_v44.wav" controls></audio>
+        </div>
+        <div class="audio-row__item">
+          <label>d=80:</label>
+          <audio src="static/samples_lj/sample_u4_d80_v44.wav" controls></audio>
+        </div>
+        <span>(sample rate = 44100Hz)</span>
+      </div>
+      <p style="text-align: justify">
+        Coffee is a beverage brewed from roasted coffee beans. Darkly colored, bitter, and slightly acidic, coffee has a stimulating effect on humans, primarily due to its caffeine content. It has the highest sales in the world market for hot drinks.
+        The seeds of the Coffea plant's fruits are separated to produce unroasted green coffee beans. The beans are roasted and then ground into fine particles typically steeped in hot water before being filtered out, producing a cup of coffee. It is usually served hot, although chilled or iced coffee is common. Coffee can be prepared and presented in a variety of ways (e.g., espresso, French press, caffè latte, or already-brewed canned coffee). Sugar, sugar substitutes, milk, and cream are often added to mask the bitter taste or enhance the flavor.
+        Though coffee is now a global commodity, it has a long history tied closely to food traditions around the Red Sea. The earliest credible evidence of coffee drinking as the modern beverage appears in modern-day Yemen in southern Arabia in the middle of the 15th century in Sufi shrines, where coffee seeds were first roasted and brewed in a manner similar to how it is now prepared for drinking. The coffee beans were procured by the Yemenis from the Ethiopian Highlands via coastal Somali intermediaries, and cultivated in Yemen. By the 16th century, the drink had reached the rest of the Middle East and North Africa, later spreading to Europe.
+      </p>
+    </div>
+
+
+
+    <h2>Pitch transformations</h2>
+
+    <p>Coffee is a beverage brewed from roasted coffee beans.</p>
+
+    <p>reference (mul=1, add=0)</p>
+    <div class="audio-box">
+      <div class="audio-item">
+        d=384<audio src="static/samples_lj/sample_up_1_0_d384_v22.wav" controls></audio>
+      </div>
+      <div class="audio-item">
+        d=128<audio src="static/samples_lj/sample_up_1_0_d128_v22.wav" controls></audio>
+      </div>
+      <div class="audio-item">
+        d=80<audio src="static/samples_lj/sample_up_1_0_d80_v22.wav" controls></audio>
+      </div>
+    <div class="audio-box">
+      <div class="audio-item">
+        d=384<audio src="static/samples_lj/sample_up_1_0_d384_v44.wav" controls></audio>
+      </div>
+      <div class="audio-item">
+        d=128<audio src="static/samples_lj/sample_up_1_0_d128_v44.wav" controls></audio>
+      </div>
+      <div class="audio-item">
+        d=80<audio src="static/samples_lj/sample_up_1_0_d80_v44.wav" controls></audio>
+      </div>
+    </div>
+    <br />
+    <p>high pitch (mul=1, add=2)</p>
+    <div class="audio-box">
+      <div class="audio-item">
+        d=384<audio src="static/samples_lj/sample_up_1_2_d384_v22.wav" controls></audio>
+      </div>
+      <div class="audio-item">
+        d=128<audio src="static/samples_lj/sample_up_1_2_d128_v22.wav" controls></audio>
+      </div>
+      <div class="audio-item">
+        d=80<audio src="static/samples_lj/sample_up_1_2_d80_v22.wav" controls></audio>
+      </div>
+    </div>
+    <div class="audio-box">
+      <div class="audio-item">
+        d=384<audio src="static/samples_lj/sample_up_1_2_d384_v44.wav" controls></audio>
+      </div>
+      <div class="audio-item">
+        d=128<audio src="static/samples_lj/sample_up_1_2_d128_v44.wav" controls></audio>
+      </div>
+      <div class="audio-item">
+        d=80<audio src="static/samples_lj/sample_up_1_2_d80_v44.wav" controls></audio>
+      </div>
+    </div>
+    <br />
+    <p>low pitch (mul=1, add=-2)</p>
+    <div class="audio-box">
+      <div class="audio-item">
+        d=384<audio src="static/samples_lj/sample_up_1_-2_d384_v22.wav" controls></audio>
+      </div>
+      <div class="audio-item">
+        d=128<audio src="static/samples_lj/sample_up_1_-2_d128_v22.wav" controls></audio>
+      </div>
+      <div class="audio-item">
+        d=80<audio src="static/samples_lj/sample_up_1_-2_d80_v22.wav" controls></audio>
+      </div>
+    </div>
+    <div class="audio-box">
+      <div class="audio-item">
+        d=384<audio src="static/samples_lj/sample_up_1_-2_d384_v44.wav" controls></audio>
+      </div>
+      <div class="audio-item">
+        d=128<audio src="static/samples_lj/sample_up_1_-2_d128_v44.wav" controls></audio>
+      </div>
+      <div class="audio-item">
+        d=80<audio src="static/samples_lj/sample_up_1_-2_d80_v44.wav" controls></audio>
+      </div>
+    </div>
+    <br />
+    <p>flat pitch (mul=0, add=0)</p>
+    <div class="audio-box">
+      <div class="audio-item">
+        d=384<audio src="static/samples_lj/sample_up_0_0_d384_v22.wav" controls></audio>
+      </div>
+      <div class="audio-item">
+        d=128<audio src="static/samples_lj/sample_up_0_0_d128_v22.wav" controls></audio>
+      </div>
+      <div class="audio-item">
+        d=80<audio src="static/samples_lj/sample_up_0_0_d80_v22.wav" controls></audio>
+      </div>
+    </div>
+    <div class="audio-box">
+      <div class="audio-item">
+        d=384<audio src="static/samples_lj/sample_up_0_0_d384_v44.wav" controls></audio>
+      </div>
+      <div class="audio-item">
+        d=128<audio src="static/samples_lj/sample_up_0_0_d128_v44.wav" controls></audio>
+      </div>
+      <div class="audio-item">
+        d=80<audio src="static/samples_lj/sample_up_0_0_d80_v44.wav" controls></audio>
+      </div>
+    </div>
+    <br />
+    <p>inverted pitch (mul=-1, add=0)</p>
+    <div class="audio-box">
+      <div class="audio-item">
+        d=384<audio src="static/samples_lj/sample_up_-1_0_d384_v22.wav" controls></audio>
+      </div>
+      <div class="audio-item">
+        d=128<audio src="static/samples_lj/sample_up_-1_0_d128_v22.wav" controls></audio>
+      </div>
+      <div class="audio-item">
+        d=80<audio src="static/samples_lj/sample_up_-1_0_d80_v22.wav" controls></audio>
+      </div>
+    </div>
+    <div class="audio-box">
+      <div class="audio-item">
+        d=384<audio src="static/samples_lj/sample_up_-1_0_d384_v44.wav" controls></audio>
+      </div>
+      <div class="audio-item">
+        d=128<audio src="static/samples_lj/sample_up_-1_0_d128_v44.wav" controls></audio>
+      </div>
+      <div class="audio-item">
+        d=80<audio src="static/samples_lj/sample_up_-1_0_d80_v44.wav" controls></audio>
+      </div>
+    </div>
+    <br />
+
+    <script>
+      const audioOutputs = document.querySelectorAll("audio");
+      audioOutputs.forEach((a) => (a.volume = 0.5));
+    </script>
+  </body>
+  <footer>
+
+    <h2>Links</h2>
+    <p>
+      [1] <a href="https://en.wikipedia.org/wiki/Coffee">https://en.wikipedia.org/wiki/Coffee</a>
+    </p>
+    <p>
+      [2] Mixer-TTS paper <a href="https://arxiv.org/abs/2110.03584">https://arxiv.org/abs/2110.03584</a>
+    </p>
+    <p>
+      [3] 22050 Hz vocoder <a href="https://huggingface.co/BSC-LT/vocos-mel-22khz">https://huggingface.co/BSC-LT/vocos-mel-22khz</a>
+    </p>
+    <p>
+      [4] 44100 Hz vocoder <a href="https://huggingface.co/patriotyk/vocos-mel-hifigan-compat-44100khz">https://huggingface.co/patriotyk/vocos-mel-hifigan-compat-44100khz</a>
+    </p>
+        
+
+  </footer>
+</html>
